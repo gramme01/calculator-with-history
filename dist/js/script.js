@@ -234,8 +234,12 @@ var keyPositionCheck = function keyPositionCheck(value, type) {
 
 
 var createHistory = function createHistory(exp) {
-  historyLog.unshift(exp);
-  addHistoryEntry(historyLogDisplay);
+  if (historyLog[0] === exp) {
+    return;
+  } else {
+    historyLog.unshift(exp);
+    addHistoryEntry(historyLogDisplay);
+  }
 };
 
 var addHistoryEntry = function addHistoryEntry() {
