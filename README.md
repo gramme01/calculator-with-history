@@ -1,6 +1,9 @@
 # SIMPLE CALCULATOR - `with history caching and dark mode`
-• JavaScript • CSS • BEM • Gulp •
----
+*• JavaScript • CSS • BEM • Gulp •*
+
+
+## [Live Preview](https://gramme01.github.io/calculator-with-history/) here
+
 
 ![Design preview for calculator](./dist/assets/design/calc-03.png)
 
