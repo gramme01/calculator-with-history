@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./dist/css/style.css">
+  <title>My Calculator</title>
+</head>
+
+<body>
+  <div class="calculator">
+    <div class="screen">
+
+      <div class="theme-toggler">
+        <label class="theme-toggler__switch">
+          <input type="checkbox" name="theme" class="theme-toggler__checkbox">
+          <div class="theme-toggler__slider"></div>
+        </label>
+      </div>
+
+      <div class="calc">
+        <p class="calc__expression"></p>
+        <div class="calc__result">
+          <span class="calc__equal">=</span><span class="calc__answer">0</span>
+        </div>
+      </div>
+
+      <div class="history">
+        <div class="history__header">history</div>
+        <div class="history__content">
+        </div>
+      </div>
+    </div>
+
+    <div class="btn">
+
+      <!-- NUMBER KEYS -->
+      <button class="btn__num" data-value="9">9</button>
+      <button class="btn__num" data-value="8">8</button>
+      <button class="btn__num" data-value="7">7</button>
+      <button class="btn__num" data-value="6">6</button>
+      <button class="btn__num" data-value="5">5</button>
+      <button class="btn__num" data-value="4">4</button>
+      <button class="btn__num" data-value="3">3</button>
+      <button class="btn__num" data-value="2">2</button>
+      <button class="btn__num" data-value="1">1</button>
+      <button class="btn__num" data-value="0">0</button>
+      <button class="btn__num" data-value=".">.</button>
+      <!-- END OF NUMBER KEYS -->
+
+      <!-- OPERATOR KEYS -->
+      <button class="btn__op btn__op--del" data-value="clear">
+        <img class="btn__svg btn__svg--big" src="./dist/assets/SVG/del.svg" alt="clear">
+      </button>
+
+      <button class="btn__op btn__op--bcksp" data-value="bcksp">
+        <svg class="btn__svg btn__svg--big" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.2 21.26">
+          <title>bckSp</title>
+          <g id="Layer_2" data-name="Layer 2">
+            <g id="Layer_1-2" data-name="Layer 1">
+              <path class="btn__icon"
+                d="M13.76,14.76a.51.51,0,0,0,.7,0l3.42-3.42,3.43,3.42a.51.51,0,0,0,.7,0,.5.5,0,0,0,0-.71l-3.42-3.42L22,7.21a.5.5,0,0,0,0-.71.48.48,0,0,0-.7,0L17.88,9.92,14.46,6.5a.48.48,0,0,0-.7,0,.5.5,0,0,0,0,.71l3.42,3.42-3.42,3.42A.5.5,0,0,0,13.76,14.76Z" />
+              <path class="btn__icon"
+                d="M28.7,0H8.44a.49.49,0,0,0-.39.19L.11,10.32a.48.48,0,0,0,0,.62L8.05,21.07a.49.49,0,0,0,.39.19H28.7a.5.5,0,0,0,.5-.5V.5A.5.5,0,0,0,28.7,0Zm-.5,20.26H8.69L1.14,10.63,8.69,1H28.2Z" />
+            </g>
+          </g>
+        </svg>
+      </button>
+
+      <button class="btn__op btn__op--mod" data-value="%">%</button>
+
+      <button class="btn__op btn__op--ans" data-value="ans">ANS
+      </button>
+
+
+
+
+
+      <button class="btn__op btn__op--round btn__op--div" data-value="÷">
+        <svg class="btn__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.3 17">
+          <title>divide</title>
+          <g id="Layer_2" data-name="Layer 2">
+            <g id="Layer_1-2" data-name="Layer 1">
+              <path class="btn__icon" d="M16.3,9.5H1a1,1,0,0,1,0-2H16.3a1,1,0,0,1,0,2Z" />
+              <circle class="btn__icon" cx="8.65" cy="2" r="2" />
+              <circle class="btn__icon" cx="8.65" cy="15" r="2" />
+            </g>
+          </g>
+        </svg>
+      </button>
+
+      <button class="btn__op btn__op--round btn__op--mult" data-value="x">
+        <svg class="btn__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.82 12.82">
+          <title>multiply</title>
+          <g id="Layer_2" data-name="Layer 2">
+            <g id="Layer_1-2" data-name="Layer 1">
+              <path class="btn__icon"
+                d="M7.82,6.41l4.71-4.7A1,1,0,1,0,11.11.29L6.41,5,1.71.29A1,1,0,0,0,.29,1.71L5,6.41.29,11.11a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0l4.7-4.71,4.7,4.71a1,1,0,0,0,.71.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.42Z" />
+            </g>
+          </g>
+        </svg>
+      </button>
+
+      <button class="btn__op btn__op--round btn__op--subt" data-value="-">
+        <svg class="btn__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 2">
+          <title>subtract</title>
+          <g id="Layer_2" data-name="Layer 2">
+            <g id="Layer_1-2" data-name="Layer 1">
+              <path class="btn__icon" d="M15,2H1A1,1,0,0,1,1,0H15a1,1,0,0,1,0,2Z" />
+            </g>
+          </g>
+        </svg>
+      </button>
+
+      <button class="btn__op btn__op--round btn__op--add" data-value="+">
+        <svg class="btn__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+          <title>add</title>
+          <g id="Layer_2" data-name="Layer 2">
+            <g id="Layer_1-2" data-name="Layer 1">
+              <path class="btn__icon"
+                d="M15,7H9V1A1,1,0,0,0,7,1V7H1A1,1,0,0,0,1,9H7v6a1,1,0,0,0,2,0V9h6a1,1,0,0,0,0-2Z" />
+            </g>
+          </g>
+        </svg>
+      </button>
+
+      <button class="btn__op btn__op--accent btn__op--equal" data-value="=">
+        <svg class="btn__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 8">
+          <title>equalTo</title>
+          <g id="Layer_2" data-name="Layer 2">
+            <g id="Layer_1-2" data-name="Layer 1">
+              <line class="btn__icon btn__icon--white" x1="1" y1="1" x2="15" y2="1" />
+              <path class="btn__icon btn__icon--white" d="M15,2H1A1,1,0,0,1,1,0H15a1,1,0,0,1,0,2Z" />
+              <line class="btn__icon btn__icon--white" x1="1" y1="7" x2="15" y2="7" />
+              <path class="btn__icon btn__icon--white" d="M15,8H1A1,1,0,0,1,1,6H15a1,1,0,0,1,0,2Z" />
+            </g>
+          </g>
+        </svg>
+      </button>
+      <!-- END OF OPERATOR KEYS -->
+
+
+
+
+    </div>
+  </div>
+  <script src="./dist/js/script.js"></script>
+</body>
+
+</html>

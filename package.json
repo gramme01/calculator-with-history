@@ -1,0 +1,42 @@
+{
+	"name": "cchub-grad-program",
+	"version": "1.0.0",
+	"description": "From Alecad. Youtube tutorial",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [
+		"js",
+		"gulp",
+		"calculator"
+	],
+	"author": "Oguntoyinbo Emmanuel",
+	"license": "ISC",
+	"devDependencies": {
+		"@babel/core": "^7.5.5",
+		"@babel/preset-env": "^7.5.5",
+		"babelify": "^10.0.0",
+		"browser-sync": "^2.26.7",
+		"browserify": "^16.3.0",
+		"gulp": "^4.0.2",
+		"gulp-autoprefixer": "^6.1.0",
+		"gulp-if": "^3.0.0",
+		"gulp-notify": "^3.2.0",
+		"gulp-options": "^1.1.1",
+		"gulp-rename": "^1.4.0",
+		"gulp-sourcemaps": "^2.6.5",
+		"gulp-strip-debug": "^3.0.0",
+		"vinyl-buffer": "^1.0.1",
+		"vinyl-source-stream": "^2.0.0"
+	},
+	"babel": {
+		"presets": [
+			"@babel/preset-env"
+		]
+	},
+	"browserslist": [
+		"last 2 versions",
+		"> 5%"
+	]
+}
