@@ -67,3 +67,5 @@ A simple calculator for addition, subtraction, multiplication, division and modu
   - Stores the last 10 expressions that was computed, scrollable vertically
   - If same espression are evaluated consecutively, only one log is created
   - Clicking any history will display the saved expression in the expression screen for further computations
+
+Design inspiration from [Sebastian Stapelfeldt](https://dribbble.com/shots/2297223-Day-04-Calculator).
