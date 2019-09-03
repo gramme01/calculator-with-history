@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Rajdhani:400,500&display=swap");
+
 *,
 *::before,
 *::after {
@@ -30,7 +32,6 @@
 	--operator-bg: rgb(224, 224, 246);
 	--operator-color: rgb(138, 138, 221);
 	--history-bg: rgb(240, 240, 250);
-	/* --history-color: rgb(138, 138, 221); */
 	--history-color: rgb(138, 138, 221);
 	--text-color: rgb(26, 26, 46);
 	--bg: linear-gradient(to bottom left, var(--text-color), rgb(36, 36, 73));
@@ -49,6 +50,7 @@ body {
 	-ms-flex-align: center;
 	align-items: center;
 	font-family: "Rajdhani", sans-serif;
+	font-weight: 400;
 	background: var(--bg);
 	color: var(--text-color);
 	font-size: 20px;
